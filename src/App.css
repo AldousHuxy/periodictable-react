@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.title {
+    grid-column: 1 / span 8;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.periodic-table {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.element {
+    padding: 7px;
+    margin: 1px;
+    border-radius: 4px;
+    border: black 1px solid;
+}
+
+.element:hover {
+    background-color: cyan;
+}
+
+.element:active {
+    background-color: red;
+}
+
+.atomicNum {
+    margin-left: 1px;
+}
+
+.symbol {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.atomicMass {
+    text-align: center;
+}
+
+.helium {
+    grid-column: 8 / 9;
+}
+
+.info-container {
+    grid-column: 1 / span 8;
+    height: 6em;
+    padding: 7px;
+    margin: 1px;
+    border-radius: 4px;
+    border: black 1px solid;
+}
+
+.info-header {
+    grid-column: 1 / span 8;
+    padding-bottom: 2px;
+    font-size: 1.05em;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.info-body {
+    grid-column: 1 / span 8;
+    font-size: 0.85em;
+}
+
+.evaluate-btn {
+    grid-column-start: 1;
+}
+
+.evaluate-output {
+    grid-column: 2 / span 6;
+    border-radius: 4px;
+    border: black 1px solid;
+}
+
+.clear-btn {
+    grid-column-start: 8;
+}
